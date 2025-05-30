@@ -58,7 +58,10 @@ public class HJFirstMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        {
             event.accept(ModItems.CALENDAR);
+            event.accept(ModItems.PHONE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
